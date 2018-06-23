@@ -1,5 +1,6 @@
-package vernoi_interactable;
+package veronoi_interactable;
 
+import veronoi_interactable.DelaunayPoint;
 import java.util.Comparator;
 
 public class DelaunayComparator implements Comparator<DelaunayPoint>{
