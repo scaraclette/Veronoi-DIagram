@@ -22,7 +22,7 @@ import javafx.scene.shape.Line;
 public class Delaunay {
     
     // raw collection of points
-    ArrayList<Point> pointArray = new ArrayList();
+    ArrayList<DelaunayPoint> pointArray = new ArrayList();
     Pane pane;
     
     public Delaunay(Pane p )
@@ -32,7 +32,7 @@ public class Delaunay {
     
     
     // add a point to point data
-    public void add(Point p )
+    public void add(DelaunayPoint p )
     {
        pointArray.add(p);
     }
@@ -41,7 +41,7 @@ public class Delaunay {
     // draw a full graph with all points connected
     public void DrawLinks()
     {
-        for(Point p : pointArray)
+        for(DelaunayPoint p : pointArray)
         {
             if(p.getCanLink())
             {
