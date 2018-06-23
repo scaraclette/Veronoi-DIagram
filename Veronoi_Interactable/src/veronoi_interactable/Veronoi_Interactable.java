@@ -70,7 +70,7 @@ public class Veronoi_Interactable extends Application {
        // add a dot to the interaction pane
        InteractionPane.getChildren().add(new Circle(e.getX(),e.getY(),4));
        System.out.println("mouse clicked!");
-       d.add(new Point(e.getX(),e.getY()));
+       d.add(new DelaunayPoint(e.getX(),e.getY()));
         
    } 
     };
