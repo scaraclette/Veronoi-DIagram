@@ -1,4 +1,4 @@
-package vernoi_interactable;
+package veronoi_interactable;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -28,7 +28,7 @@ public class DelaunayPoint extends Point.Double {
     }
 
     public void setLinks(Collection<DelaunayPoint> c) {
-        otherPoints = new ArrayList<>(c){{
+        otherPoints = new ArrayList(c){{
             sort(pComparator);
         }};
         //todo: check what prints out
@@ -44,6 +44,11 @@ public class DelaunayPoint extends Point.Double {
     {
         return sqrt(pow((p.getX() - this.x),2) + pow((p.getY() - this.y),2));
     } //formula that I will never remember
+    
+    public boolean getCanLink()
+    {
+        return canLink;
+    }
 
     @Override
     public String toString() {
