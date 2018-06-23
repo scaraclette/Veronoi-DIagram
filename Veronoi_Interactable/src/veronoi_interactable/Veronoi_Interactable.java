@@ -124,7 +124,7 @@ public class Veronoi_Interactable extends Application {
      {
          d.pointArray.clear();
          InteractionPane.getChildren().clear();
-         System.out.println("Similation refreshed!");
+         System.out.println("Simulation refreshed!");
      }
 
     /**
